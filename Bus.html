@@ -1,0 +1,110 @@
+content://com.android.externalstorage.documents/tree/primary%3Acs_practicals::primary:cs_practicals/Bus.html
+<html>
+<head>
+
+<title>Bus Pass Application Form</title>
+<style>
+  body{font-family:Arial,sans-serif;background:#f2f4f8;padding:15px}
+  form{max-width:600px;margin:auto;background:#fff;padding:20px;border:1px solid #ccc}
+  h2{text-align:center}
+  input[type=text],input[type=date],input[type=tel],input[type=email],select,textarea{
+    width:100%;padding:8px;font-size:16px;box-sizing:border-box}
+  p{margin:14px 0 4px;font-weight:bold}
+  button{padding:10px 25px;font-size:16px;margin-right:10px}
+  footer{text-align:center;font-size:13px;margin-top:20px}
+</style>
+</head>
+<body>
+<form action="#" method="post">
+  <h2>Application Form</h2>
+
+  <p>I-Card Number</p>
+  <input type="text" name="icard" required>
+
+  <p>Full Name</p>
+  <input type="text" name="fullname" required>
+
+  <p>Date of Birth</p>
+  <input type="date" name="dob" required>
+
+  <p>Gender</p>
+  <input type="radio" name="gender" value="male" required> Male
+  <input type="radio" name="gender" value="female"> Female
+
+  <p>Institute Name</p>
+  <input type="text" name="institute" required>
+
+  <p>Institute Address</p>
+  <input type="text" name="instaddress" required>
+
+  <p>Category</p>
+  <select name="category" required>
+    <option value="">--select--</option>
+    <option>General</option>
+    <option>ST</option>
+    <option>OBC</option>
+    <option>SC</option>
+  </select>
+
+  <p>Address (Permanent)</p>
+  <textarea name="address" rows="3" required></textarea>
+
+  <p>From (Area)</p>
+  <input type="text" name="from" required>
+
+  <p>To (Area)</p>
+  <input type="text" name="to" required>
+
+  <p>Academic Year</p>
+  <select name="year" required>
+    <option value="">--select--</option>
+    <option>2022-2023</option>
+    <option>2023-2024</option>
+    <option>2024-2025</option>
+    <option>2025-2026</option>
+    <option>2026-2027</option>
+  </select>
+
+  <p>Pass Duration</p>
+  <select name="duration" required>
+    <option value="">--select--</option>
+    <option>Monthly</option>
+    <option>3-Monthly</option>
+  </select>
+
+  <p>Pass From (Date)</p>
+  <input type="date" name="passfrom" required>
+
+  <p>Pass To (Date)</p>
+  <input type="date" name="passto" required>
+
+  <p>Service Type</p>
+  <select name="service" required>
+    <option value="">--select--</option>
+    <option>City</option>
+    <option>Local</option>
+    <option>Express</option>
+  </select>
+
+  <p>Mobile No.</p>
+  <input type="tel" name="mobile" pattern="[0-9]{10}" maxlength="10" required>
+
+  <p>E-mail</p>
+  <input type="email" name="email" required>
+
+  <p>Payment Method</p>
+  <input type="radio" name="payment" value="cash" checked> Cash
+
+  <p>
+    <input type="checkbox" required>
+    Note: No changes can be made to the details filled in the application form once it is submitted. I have verified all the above details and they are correct.
+  </p>
+
+  <br>
+  <button type="submit">Submit</button>
+  <button type="reset">Cancel</button>
+
+  <footer>&copy; GSRTC. All Rights Reserved</footer>
+</form>
+</body>
+</html>
